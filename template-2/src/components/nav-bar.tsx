@@ -60,7 +60,7 @@ const NavBar: React.FC = () => {
           <img
             src={navStyle.logoSrc}
             alt="company logo"
-            className="w-[70px] cursor-pointer hover:scale-110 ease-in-out duration-100"
+            className="w-[70px] cursor-pointer hover:scale-110 ease-in-out duration-300"
             onClick={() => handleNavLinkClick("/")}
           />
         </div>
@@ -77,7 +77,7 @@ const NavBar: React.FC = () => {
             <button
               key={link.name}
               onClick={() => handleNavLinkClick(link.path)}
-              className="hover:text-[#FF70C3]"
+              className="hover:text-skyblue duration-300 ease-in-out"
             >
               {link.name}
             </button>
@@ -99,7 +99,7 @@ const NavBar: React.FC = () => {
                   {navLinks.map((link) => (
                     <li
                       key={link.name}
-                      className="cursor-pointer hover:text-[#FF70C3]"
+                      className="cursor-pointer hover:text-skyblue ease-in-out duration-300 "
                       onClick={() => handleNavLinkClick(link.path)}
                     >
                       {link.name}
