@@ -71,7 +71,7 @@ const AboutMePage: React.FC = () => {
           <div className="w-full flex flex-wrap justify-center">
             {teamMembers.map((member, index) => (
               <div key={index} className="w-full md:w-1/3 lg:w-1/4 p-4">
-                <div className="bg-white shadow-md rounded p-6 text-center h-full flex flex-col items-center">
+                <div className="bg-white shadow-md rounded-lg p-6 text-center h-full flex flex-col items-center">
                   <img
                     src={member.image}
                     alt={member.name}
