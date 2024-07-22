@@ -67,10 +67,12 @@ const AboutMePage: React.FC = () => {
           </div>
         </section>
         <section className="py-10">
-          <h3 className="text-2xl font-bold text-center mb-6">Meet the Team</h3>
-          <div className="w-full flex flex-wrap justify-center">
+          <h3 className="text-2xl font-bold text-center mb-6 text-hotpink font-londrina">
+            Meet the Team
+          </h3>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 justify-items-center">
             {teamMembers.map((member, index) => (
-              <div key={index} className="w-full md:w-1/3 lg:w-1/4 p-4">
+              <div key={index} className="w-3/4 p-4">
                 <div className="bg-white shadow-md rounded-lg p-6 text-center h-full flex flex-col items-center">
                   <img
                     src={member.image}

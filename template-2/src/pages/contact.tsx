@@ -71,7 +71,7 @@ const ContactPage: React.FC = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-skyblue text-white py-2 px-4  transition duration-300 rounded-md"
+                  className="w-full bg-skyblue text-white py-2 px-4 hover:bg-[#0CBCE9] hover:scale-105 hover:shadow-lg duration-300 ease-in-out rounded-md"
                 >
                   Send Message
                 </button>

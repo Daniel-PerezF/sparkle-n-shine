@@ -107,7 +107,7 @@ const HomePage: React.FC = () => {
             refreshed and rejuvenated.
           </p>
           <a
-            className="px-6 py-3 bg-skyblue text-white font-semibold rounded-md hover:bg-orange-500 transition duration-300"
+            className="px-6 py-3 bg-skyblue text-white font-semibold rounded-md hover:bg-[#0CBCE9] hover:scale-105 hover:shadow-lg duration-300 ease-in-out"
             href="/contact"
           >
             Book Now

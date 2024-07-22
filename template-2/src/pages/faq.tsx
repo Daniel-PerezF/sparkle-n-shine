@@ -72,10 +72,10 @@ const Faq: React.FC = () => {
         {/* Particles Effect */}
         <TsParticles />
       </div>
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-hotpink relative">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-hotpink relative font-londrina">
         Frequently Asked Questions
       </h2>
-      <div className="max-w-4xl mx-auto space-y-4 relative">
+      <div className="max-w-4xl mx-auto space-y-4 relative font-news">
         {faqItems.map((item, index) => (
           <div key={index} className="border border-skyblue rounded-md">
             <button
