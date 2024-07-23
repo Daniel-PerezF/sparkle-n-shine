@@ -7,6 +7,7 @@ import {
   FaBuilding,
 } from "react-icons/fa";
 import TsParticles from "../components/ts-particles";
+import { useEffect } from "react";
 
 const services = [
   {
