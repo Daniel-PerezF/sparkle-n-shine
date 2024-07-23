@@ -31,12 +31,12 @@ export default function TsParticles() {
       interactivity: {
         events: {
           onClick: {
-            enable: false,
+            enable: true,
             mode: "push",
           },
           onHover: {
             enable: true,
-            mode: ["bubble"],
+            mode: "repulse",
           },
         },
         modes: {
@@ -46,15 +46,21 @@ export default function TsParticles() {
             opacity: 0.8,
           },
           push: {
-            quantity: 4,
+            quantity: 1,
           },
           repulse: {
-            distance: 200,
-            duration: 0.4,
+            distance: 150, // Reduced distance for a less harsh effect
+            duration: 2, // Increased duration for smoother effect
+            speed: 0.5, // Reduced speed for gentler effect
+            factor: 5, // Lower factor for less aggressive repulse
           },
         },
       },
       particles: {
+        collisions: {
+          enable: true,
+          mode: "bounce",
+        },
         color: {
           value: "#16C7F3",
         },
@@ -79,7 +85,7 @@ export default function TsParticles() {
           density: {
             enable: true,
           },
-          value: 50,
+          value: 25,
         },
         opacity: {
           value: 0.3,
@@ -88,7 +94,7 @@ export default function TsParticles() {
           type: "circle",
         },
         size: {
-          value: { min: 51, max: 8 },
+          value: { min: 30, max: 60 },
         },
       },
       detectRetina: true,
@@ -108,8 +114,8 @@ export default function TsParticles() {
             top: 0,
             left: 0,
             width: "100%",
-            height: "100%", // Ensure particles height covers only the visible part excluding the footer
-            zIndex: -1, // Ensure particles are behind other content
+            height: "100%",
+            zIndex: -1,
           }}
         />
       );
