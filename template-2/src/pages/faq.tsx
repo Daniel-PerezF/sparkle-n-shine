@@ -68,7 +68,7 @@ const Faq: React.FC = () => {
 
   return (
     <div className="min-h-screen p-6">
-      <div className="absolute overflow-hidden">
+      <div className="absolute overflow-hidden w-full h-full">
         {/* Particles Effect */}
         <TsParticles />
       </div>

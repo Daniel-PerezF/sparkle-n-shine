@@ -9,23 +9,13 @@ import { loadSlim } from "@tsparticles/slim";
 
 export default function TsParticles() {
   const [init, setInit] = useState(false);
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
   useEffect(() => {
-    // Update the window height on resize
-    const handleResize = () => setWindowHeight(window.innerHeight);
-
-    window.addEventListener("resize", handleResize);
-
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
     });
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   const particlesLoaded = async (): Promise<void> => {};
@@ -106,23 +96,26 @@ export default function TsParticles() {
     []
   );
 
-  if (init) {
-    return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: `${windowHeight}px`, // Ensure particles height covers only the visible part excluding the footer
-          zIndex: -1, // Ensure particles are behind other content
-        }}
-      />
-    );
-  }
+  const MemoizedParticles = useMemo(() => {
+    if (init) {
+      return (
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%", // Ensure particles height covers only the visible part excluding the footer
+            zIndex: -1, // Ensure particles are behind other content
+          }}
+        />
+      );
+    }
+    return null;
+  }, [init, options]);
 
-  return <></>;
+  return <>{MemoizedParticles}</>;
 }
