@@ -4,7 +4,7 @@ import TsParticles from "../components/ts-particles";
 const ContactPage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
   return (
     <div className="min-h-screen text-hotpink">
       <div className="absolute overflow-hidden">

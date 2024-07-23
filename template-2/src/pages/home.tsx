@@ -92,7 +92,7 @@ const reviews = [
 const HomePage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
   return (
     <div className="min-h-screen flex flex-col justify-between text-white">
       <div className="absolute overflow-hidden">

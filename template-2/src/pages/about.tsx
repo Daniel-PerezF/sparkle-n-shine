@@ -35,7 +35,7 @@ const teamMembers = [
 const AboutMePage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
   return (
     <div className="min-h-screen">
       <div className="absolute overflow-hidden">
