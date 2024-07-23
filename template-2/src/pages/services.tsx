@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import TsParticles from "../components/ts-particles";
 import {
   FaBroom,
@@ -48,6 +49,9 @@ const services = [
 ];
 
 const Services: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="min-h-screen">
       <div className="absolute overflow-hidden">
