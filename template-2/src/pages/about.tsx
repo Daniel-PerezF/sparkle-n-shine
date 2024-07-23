@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import TsParticles from "../components/ts-particles";
 
 const teamMembers = [
@@ -32,6 +33,9 @@ const teamMembers = [
 ];
 
 const AboutMePage: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="min-h-screen">
       <div className="absolute overflow-hidden">
