@@ -65,7 +65,9 @@ const Faq: React.FC = () => {
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="min-h-screen p-6">
       <div className="absolute overflow-hidden w-full h-full">
