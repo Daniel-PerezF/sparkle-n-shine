@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TsParticles from "../components/ts-particles";
 
 interface FAQItem {
