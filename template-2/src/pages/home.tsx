@@ -105,13 +105,13 @@ const HomePage: React.FC = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Welcome to Sparkle n Shine
           </h1>
-          <p className="text-lg md:text-2xl mb-8">
+          <p className="text-lg md:text-2xl mb-8 font-news max-w-4xl">
             Our mission is to bring a touch of brilliance to your home,
             providing exceptional cleaning services that make your space feel
             refreshed and rejuvenated.
           </p>
           <a
-            className="px-6 py-3 bg-skyblue text-white font-semibold rounded-md hover:bg-[#0CBCE9] hover:scale-105 hover:shadow-lg duration-300 ease-in-out"
+            className="font-londrina px-6 py-3 bg-skyblue text-white font-semibold rounded-md hover:bg-[#0CBCE9] hover:scale-105 hover:shadow-lg duration-300 ease-in-out"
             href="/contact"
           >
             Book Now
