@@ -55,7 +55,6 @@ const Services: React.FC = () => {
   return (
     <div className="min-h-screen">
       <div className="absolute overflow-hidden">
-        {/* Particles Effect */}
         <TsParticles />
       </div>
       <main className="container mx-auto px-4 py-2 font-londrina text-hotpink relative">
