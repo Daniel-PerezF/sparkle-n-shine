@@ -96,7 +96,6 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col justify-between text-white">
       <div className="absolute overflow-hidden">
-        {/* Particles Effect */}
         <TsParticles />
       </div>
       <main className="flex-grow z-10">
