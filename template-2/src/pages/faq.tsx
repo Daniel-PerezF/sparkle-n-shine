@@ -71,7 +71,6 @@ const Faq: React.FC = () => {
   return (
     <div className="min-h-screen p-6">
       <div className="absolute overflow-hidden w-full h-full">
-        {/* Particles Effect */}
         <TsParticles />
       </div>
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-hotpink relative font-londrina">
