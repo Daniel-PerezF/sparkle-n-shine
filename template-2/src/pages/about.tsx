@@ -39,7 +39,6 @@ const AboutMePage: React.FC = () => {
   return (
     <div className="min-h-screen">
       <div className="absolute overflow-hidden">
-        {/* Particles Effect */}
         <TsParticles />
       </div>
       {/* Main Content */}
