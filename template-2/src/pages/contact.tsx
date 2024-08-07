@@ -8,7 +8,6 @@ const ContactPage: React.FC = () => {
   return (
     <div className="min-h-screen text-hotpink">
       <div className="absolute overflow-hidden">
-        {/* Particles Effect */}
         <TsParticles />
       </div>
       <main className="container mx-auto px-4 py-2">
